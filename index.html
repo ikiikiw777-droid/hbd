@@ -293,22 +293,20 @@ canvas#confetti{position:fixed;inset:0;z-index:50;pointer-events:none}
   <div class="slide" id="s2">
     <p class="lbl fade-in">Momen Kita</p>
     <h2 class="hdg fade-in fd1">Foto <em>Bersama</em></h2>
+    
     <div class="photo-stage fade-in fd2">
       <div class="photo-frame" id="pf0">
-        <div class="ph-label" id="pfl0" style="display: none;">
-          <div class="ph-icon">📸</div>
-          <p>Ketuk untuk pilih<br><span>foto utama kalian</span></p>
-        </div>
-        <img id="pi0" alt="Foto utama" src="IMG 1.jpeg" style="display: block;">
-        <input type="file" accept="image/*" onchange="loadPic(0,this)">
+        <img id="pi0" alt="Foto utama" src="IMG 1.jpeg" style="display: block; width: 100%; height: 100%; object-fit: cover;">
       </div>
     </div>
     <div class="thumb-row fade-in fd3">
+      <div class="thumb" id="th1"><div class="plus" style="display: none;">+</div><img id="pi1" src="IMG 6.jpeg" style="display: block;"><input type="file" accept="image/*" onchange="loadPic(1,this)"></div>
       <div class="thumb" id="th2"><div class="plus" style="display: none;">+</div><img id="pi2" src="IMG 2.jpeg" style="display: block;"><input type="file" accept="image/*" onchange="loadPic(2,this)"></div>
       <div class="thumb" id="th3"><div class="plus" style="display: none;">+</div><img id="pi3" src="IMG 4.jpeg" style="display: block;"><input type="file" accept="image/*" onchange="loadPic(3,this)"></div>
       <div class="thumb" id="th4"><div class="plus" style="display: none;">+</div><img id="pi4" src="IMG 5.jpeg" style="display: block;"><input type="file" accept="image/*" onchange="loadPic(4,this)"></div>
     </div>
-    <p class="s2-cap fade-in fd4">LUCUUUU YAA FOTO NYA  ✦</p>
+    
+    <p class="s2-cap fade-in fd4" style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:13px; color:var(--tm); text-align:center; margin-top:10px;">LUCUUUU YAA FOTO NYA ✦</p>
     <button class="btn-next fade-in fd4" onclick="goSlide(2)">Pesan Untukmu <span class="arr">→</span></button>
   </div>
 
